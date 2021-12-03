@@ -58,7 +58,6 @@ var file = fs.readFile('input.txt', 'utf8', function (err: any, data: any) {
 			} else {
 				oxygenValues = oxygenValues.filter(o => o[bindex] === '0');
 			}
-			console.log(count1 + "/" + count2);
 		}
 
 		if (scrubberValues.length > 1) {
@@ -70,8 +69,6 @@ var file = fs.readFile('input.txt', 'utf8', function (err: any, data: any) {
 			} else {
 				scrubberValues = scrubberValues.filter(o => o[bindex] === '1');
 			}
-
-			console.log(count3 + "/" + count4);
 		}
 
 	});
