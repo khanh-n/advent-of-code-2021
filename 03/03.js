@@ -53,7 +53,6 @@ var file = fs.readFile('input.txt', 'utf8', function (err, data) {
             else {
                 oxygenValues = oxygenValues.filter(o => o[bindex] === '0');
             }
-            console.log(count1 + "/" + count2);
         }
         if (scrubberValues.length > 1) {
             let count3 = scrubberValues.filter(o => o[bindex] === '1').length;
@@ -64,7 +63,6 @@ var file = fs.readFile('input.txt', 'utf8', function (err, data) {
             else {
                 scrubberValues = scrubberValues.filter(o => o[bindex] === '1');
             }
-            console.log(count3 + "/" + count4);
         }
     });
     console.log("PART 2");
